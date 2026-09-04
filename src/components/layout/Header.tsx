@@ -81,11 +81,7 @@ export function Header() {
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             className="grid size-11 place-items-center rounded-full border-2 border-border md:hidden"
           >
-            {open ? (
-              <Menu aria-hidden="true" className="size-5" />
-            ) : (
-              <Menu aria-hidden="true" className="size-5" />
-            )}
+            {open ? <Menu aria-hidden="true" className="size-5" /> : <Menu aria-hidden="true" className="size-5" />}
           </button>
         </div>
       </div>

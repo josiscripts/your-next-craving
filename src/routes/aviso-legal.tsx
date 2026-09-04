@@ -27,8 +27,8 @@ export const Route = createFileRoute("/aviso-legal")({
         <h2>Titular del sitio</h2>
         <p>
           Como la Original (en adelante, «el Sitio») es una plataforma informativa de comparación de
-          alternativas alimentarias. Los datos identificativos del titular se completarán antes de
-          la publicación.
+          alternativas alimentarias. Los datos identificativos del titular se completarán antes de la
+          publicación.
         </p>
       </section>
       <section>

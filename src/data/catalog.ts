@@ -1,4 +1,10 @@
-import type { AlternativeProduct, Category, Comparison, OriginalProduct, Store } from "@/types";
+import type {
+  AlternativeProduct,
+  Category,
+  Comparison,
+  OriginalProduct,
+  Store,
+} from "@/types";
 
 /**
  * DEMO DATA ONLY.
@@ -24,7 +30,9 @@ const storeCatalog: Record<string, { name: string; url: string }> = {
   especializadas: { name: "Tiendas especializadas", url: "https://www.celiacos.org/" },
 };
 
-function makeStores(entries: Array<[keyof typeof storeCatalog, Store["availability"]]>): Store[] {
+function makeStores(
+  entries: Array<[keyof typeof storeCatalog, Store["availability"]]>,
+): Store[] {
   return entries.map(([key, availability]) => {
     const store = storeCatalog[key] ?? { name: key, url: "#" };
     return {
@@ -61,10 +69,7 @@ export const originalProducts: OriginalProduct[] = [
     description:
       "Barquillo crujiente en capas cubierto de chocolate con leche. El snack que se parte en dedos.",
     emoji: "🍫",
-    image: {
-      label: "KitKat · imagen demo",
-      alt: "Placeholder de barrita de barquillo con chocolate",
-    },
+    image: { label: "KitKat · imagen demo", alt: "Placeholder de barrita de barquillo con chocolate" },
     seoTitle: "Alternativas a KitKat sin lactosa y sin gluten",
     seoDescription:
       "Comparamos las 5 barritas de barquillo con chocolate más parecidas a KitKat según sabor, textura y crujiente.",
@@ -78,10 +83,7 @@ export const originalProducts: OriginalProduct[] = [
     description:
       "Helado cremoso en palo con una cobertura gruesa de chocolate que cruje al morder.",
     emoji: "🍦",
-    image: {
-      label: "Magnum · imagen demo",
-      alt: "Placeholder de helado de palo con cobertura de chocolate",
-    },
+    image: { label: "Magnum · imagen demo", alt: "Placeholder de helado de palo con cobertura de chocolate" },
     seoTitle: "Productos parecidos a Magnum sin lactosa",
     seoDescription:
       "Helados de palo con cobertura de chocolate parecidos a Magnum, ordenados por índice de similitud.",
@@ -173,7 +175,8 @@ const seeds: Seed[] = [
     lactose: true,
     celiac: false,
     verification: "no-verificado",
-    description: "Dos galletas de cacao con un relleno cremoso algo más dulce que el original.",
+    description:
+      "Dos galletas de cacao con un relleno cremoso algo más dulce que el original.",
     explanation:
       "El perfil de cacao es muy fiel; el relleno resulta un poco más dulce y menos firme.",
     highlights: [
@@ -242,7 +245,8 @@ const seeds: Seed[] = [
     lactose: true,
     celiac: false,
     verification: "no-verificado",
-    description: "Formato mini para picar. Mismo concepto de galleta y crema en tamaño reducido.",
+    description:
+      "Formato mini para picar. Mismo concepto de galleta y crema en tamaño reducido.",
     explanation:
       "El formato pequeño cambia la proporción de crema por bocado, así que el recuerdo del original es menor.",
     highlights: [
@@ -311,7 +315,8 @@ const seeds: Seed[] = [
     lactose: true,
     celiac: true,
     verification: "verificado",
-    description: "Cuatro dedos de barquillo en capas con cobertura de chocolate con leche vegetal.",
+    description:
+      "Cuatro dedos de barquillo en capas con cobertura de chocolate con leche vegetal.",
     explanation:
       "El crujiente del barquillo es casi idéntico; la cobertura funde un poco más rápido.",
     highlights: [
@@ -458,11 +463,7 @@ const seeds: Seed[] = [
     verification: "verificado",
     description: "Helado cremoso de base vegetal con cobertura gruesa de chocolate.",
     explanation: "La cobertura cruje igual de bien; el helado interior es ligeramente más ligero.",
-    highlights: [
-      "La cobertura cruje igual.",
-      "Interior algo más ligero.",
-      "Muy buena sensación cremosa.",
-    ],
+    highlights: ["La cobertura cruje igual.", "Interior algo más ligero.", "Muy buena sensación cremosa."],
     reviews: 143,
     reviewScores: [4.7, 4.5, 4.7],
     allergens: ["Soja", "Frutos secos"],

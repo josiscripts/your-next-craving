@@ -25,7 +25,9 @@ export function DietaryFilter({ value, onChange, layout = "grid" }: Props) {
         ¿Qué necesitas?
       </legend>
       <div
-        className={layout === "grid" ? "grid gap-3 sm:grid-cols-3" : "flex flex-wrap gap-2"}
+        className={
+          layout === "grid" ? "grid gap-3 sm:grid-cols-3" : "flex flex-wrap gap-2"
+        }
         role="radiogroup"
         aria-label="Necesidades alimentarias"
       >

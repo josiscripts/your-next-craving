@@ -39,7 +39,9 @@ export const Route = createFileRoute("/cookies")({
       </section>
       <section>
         <h2>Cookies de marketing</h2>
-        <p>Están desactivadas por defecto y no se activan sin tu consentimiento explícito.</p>
+        <p>
+          Están desactivadas por defecto y no se activan sin tu consentimiento explícito.
+        </p>
       </section>
       <section>
         <h2>Cómo gestionarlas</h2>

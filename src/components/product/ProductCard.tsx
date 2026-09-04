@@ -90,7 +90,10 @@ export function ProductCard({ product, rank, emoji, index = 0 }: Props) {
               Ver ficha completa
               <ArrowRight aria-hidden="true" className="size-4" />
             </Link>
-            <FavoriteButton alternativeId={product.id} originalId={product.originalProductId} />
+            <FavoriteButton
+              alternativeId={product.id}
+              originalId={product.originalProductId}
+            />
           </div>
         </div>
       </div>

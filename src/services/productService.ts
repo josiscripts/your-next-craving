@@ -40,7 +40,9 @@ export const needLabels: Record<DietaryNeed, string> = {
 };
 
 export function isDietaryNeed(value: string | undefined): value is DietaryNeed {
-  return value === "sin-gluten" || value === "sin-lactosa" || value === "sin-gluten-sin-lactosa";
+  return (
+    value === "sin-gluten" || value === "sin-lactosa" || value === "sin-gluten-sin-lactosa"
+  );
 }
 
 export function getCategories(): Category[] {
@@ -109,12 +111,7 @@ export function getSuggestions(term: string): SearchSuggestion[] {
   });
 
   return matches.slice(0, 3).flatMap((o) => [
-    {
-      id: `${o.slug}-original`,
-      label: `${o.name} Original`,
-      kind: "original" as const,
-      originalSlug: o.slug,
-    },
+    { id: `${o.slug}-original`, label: `${o.name} Original`, kind: "original" as const, originalSlug: o.slug },
     {
       id: `${o.slug}-alt`,
       label: `Alternativas a ${o.name}`,

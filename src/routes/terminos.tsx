@@ -47,9 +47,7 @@ export const Route = createFileRoute("/terminos")({
       </section>
       <section>
         <h2>Modificaciones</h2>
-        <p>
-          Podemos actualizar estas condiciones; la versión vigente será siempre la publicada aquí.
-        </p>
+        <p>Podemos actualizar estas condiciones; la versión vigente será siempre la publicada aquí.</p>
       </section>
     </LegalPage>
   ),

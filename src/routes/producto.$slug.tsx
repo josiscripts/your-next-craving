@@ -33,10 +33,7 @@ export const Route = createFileRoute("/producto/$slug")({
   head: ({ loaderData, params }) => {
     if (!loaderData) {
       return {
-        meta: [
-          { title: "Producto no disponible · Como la Original" },
-          { name: "robots", content: "noindex" },
-        ],
+        meta: [{ title: "Producto no disponible · Como la Original" }, { name: "robots", content: "noindex" }],
       };
     }
     const { product } = loaderData;
@@ -99,8 +96,8 @@ function ProductoDetalle() {
           <div className="mt-6 flex items-center gap-5 rounded-3xl bg-cream p-5">
             <SimilarityScore value={product.overallSimilarity} size="lg" />
             <p className="text-sm">
-              Comparado con <strong>{original.name}</strong> según sabor, textura, relleno y
-              parecido general.
+              Comparado con <strong>{original.name}</strong> según sabor, textura, relleno y parecido
+              general.
             </p>
           </div>
 
@@ -194,9 +191,7 @@ function ProductoDetalle() {
                   className="block h-full rounded-3xl border border-border bg-card p-4 shadow-soft transition-transform hover:-translate-y-1"
                 >
                   <DemoImageFrame image={alt.packageImage} emoji={original.emoji} />
-                  <p className="mt-3 text-xs font-bold uppercase text-muted-foreground">
-                    {alt.brand}
-                  </p>
+                  <p className="mt-3 text-xs font-bold uppercase text-muted-foreground">{alt.brand}</p>
                   <p className="font-display text-lg font-extrabold">{alt.name}</p>
                   <p className="mt-1 text-sm text-muted-foreground">
                     {alt.overallSimilarity}% parecido

@@ -25,10 +25,7 @@ export function StoreList({ stores, productName }: { stores: Store[]; productNam
               key={store.id}
               className="flex flex-wrap items-center gap-3 rounded-2xl border border-border px-4 py-3"
             >
-              <span
-                aria-hidden="true"
-                className="grid size-9 place-items-center rounded-full bg-cream text-sm font-bold"
-              >
+              <span aria-hidden="true" className="grid size-9 place-items-center rounded-full bg-cream text-sm font-bold">
                 {store.name.slice(0, 1)}
               </span>
               <span className="font-semibold">{store.name}</span>

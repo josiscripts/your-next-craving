@@ -39,11 +39,7 @@ export function DietaryBadges({ product }: { product: AlternativeProduct }) {
     <div>
       <ul className="grid gap-2 sm:grid-cols-3">
         <Badge label="Sin gluten" value={product.glutenFree} status={product.verificationStatus} />
-        <Badge
-          label="Sin lactosa"
-          value={product.lactoseFree}
-          status={product.verificationStatus}
-        />
+        <Badge label="Sin lactosa" value={product.lactoseFree} status={product.verificationStatus} />
         <Badge
           label="Apto para celiacos"
           value={product.celiacSuitable}

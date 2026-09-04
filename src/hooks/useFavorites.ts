@@ -18,7 +18,11 @@ function getSnapshot(): Favorite[] {
 }
 
 export function useFavorites() {
-  const favorites = useSyncExternalStore(favoritesService.subscribe, getSnapshot, () => EMPTY);
+  const favorites = useSyncExternalStore(
+    favoritesService.subscribe,
+    getSnapshot,
+    () => EMPTY,
+  );
 
   const toggle = useCallback(
     (alternativeId: string, originalId: string) =>

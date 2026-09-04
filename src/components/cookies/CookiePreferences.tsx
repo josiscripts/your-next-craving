@@ -45,13 +45,10 @@ export function CookiePreferences({ onSave, onClose }: Props) {
           <li className="rounded-2xl border border-border p-4">
             <div className="flex items-center justify-between gap-4">
               <span className="font-bold">Necesarias</span>
-              <span className="text-xs font-bold uppercase text-muted-foreground">
-                Siempre activas
-              </span>
+              <span className="text-xs font-bold uppercase text-muted-foreground">Siempre activas</span>
             </div>
             <p className="mt-1 text-sm text-muted-foreground">
-              Imprescindibles para que la web funcione: navegación, seguridad y tus antojos
-              guardados.
+              Imprescindibles para que la web funcione: navegación, seguridad y tus antojos guardados.
             </p>
           </li>
 

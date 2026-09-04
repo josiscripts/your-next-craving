@@ -40,8 +40,8 @@ export const Route = createFileRoute("/privacidad")({
       <section>
         <h2>Finalidad y base legal</h2>
         <p>
-          Tratamos los datos para responder a tus consultas (interés legítimo y consentimiento) y
-          para mejorar el servicio mediante estadísticas agregadas (consentimiento).
+          Tratamos los datos para responder a tus consultas (interés legítimo y consentimiento) y para
+          mejorar el servicio mediante estadísticas agregadas (consentimiento).
         </p>
       </section>
       <section>

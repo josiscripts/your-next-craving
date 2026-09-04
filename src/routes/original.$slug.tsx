@@ -87,7 +87,13 @@ function OriginalLanding() {
         <h2 className="text-2xl">Las alternativas mejor valoradas</h2>
         <div className="mt-5 space-y-6">
           {alternatives.map((alt, i) => (
-            <ProductCard key={alt.id} product={alt} rank={i + 1} emoji={original.emoji} index={i} />
+            <ProductCard
+              key={alt.id}
+              product={alt}
+              rank={i + 1}
+              emoji={original.emoji}
+              index={i}
+            />
           ))}
         </div>
       </section>
@@ -100,8 +106,8 @@ function OriginalLanding() {
               ¿Existe una versión sin gluten de {original.name}?
             </dt>
             <dd className="mt-1 text-muted-foreground">
-              Depende del país y del fabricante. Por eso comparamos alternativas de otras marcas y
-              te mostramos el estado de verificación de cada una.
+              Depende del país y del fabricante. Por eso comparamos alternativas de otras marcas y te
+              mostramos el estado de verificación de cada una.
             </dd>
           </div>
           <div>
@@ -109,8 +115,8 @@ function OriginalLanding() {
               ¿Cuál es la alternativa más parecida?
             </dt>
             <dd className="mt-1 text-muted-foreground">
-              La que encabeza este ranking según nuestro índice de similitud: sabor, textura,
-              relleno y parecido general.
+              La que encabeza este ranking según nuestro índice de similitud: sabor, textura, relleno
+              y parecido general.
             </dd>
           </div>
           <div>
